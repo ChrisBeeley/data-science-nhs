@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="agile-chapter.html"/>
-
+<link rel="next" href="copyright-chapter.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -76,10 +76,14 @@
 <li class="chapter" data-level="3" data-path="agile-chapter.html"><a href="agile-chapter.html"><i class="fa fa-check"></i><b>3</b> Agile</a></li>
 <li class="chapter" data-level="4" data-path="open-source-chapter.html"><a href="open-source-chapter.html"><i class="fa fa-check"></i><b>4</b> Open source</a><ul>
 <li class="chapter" data-level="4.1" data-path="open-source-chapter.html"><a href="open-source-chapter.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
-<li class="chapter" data-level="4.2" data-path="open-source-chapter.html"><a href="open-source-chapter.html#licences"><i class="fa fa-check"></i><b>4.2</b> Licences</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="open-source-chapter.html"><a href="open-source-chapter.html#gpl"><i class="fa fa-check"></i><b>4.2.1</b> GPL</a></li>
+<li class="chapter" data-level="4.2" data-path="open-source-chapter.html"><a href="open-source-chapter.html#free-and-open"><i class="fa fa-check"></i><b>4.2</b> “Free” and “open”</a></li>
+<li class="chapter" data-level="4.3" data-path="open-source-chapter.html"><a href="open-source-chapter.html#free-and-open-source-software"><i class="fa fa-check"></i><b>4.3</b> Free and open source software</a></li>
+<li class="chapter" data-level="4.4" data-path="open-source-chapter.html"><a href="open-source-chapter.html#licences"><i class="fa fa-check"></i><b>4.4</b> Licences</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="open-source-chapter.html"><a href="open-source-chapter.html#permissive"><i class="fa fa-check"></i><b>4.4.1</b> Permissive</a></li>
+<li class="chapter" data-level="4.4.2" data-path="open-source-chapter.html"><a href="open-source-chapter.html#copyleft"><i class="fa fa-check"></i><b>4.4.2</b> Copyleft</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="copyright-chapter.html"><a href="copyright-chapter.html"><i class="fa fa-check"></i><b>5</b> Copyright and intellectual property</a></li>
 </ul>
 
       </nav>
@@ -101,22 +105,69 @@
 <h1><span class="header-section-number">4</span> Open source</h1>
 <div id="introduction-1" class="section level2">
 <h2><span class="header-section-number">4.1</span> Introduction</h2>
-<p>\TODO</p>
+<p>As discussed in an earlier chapter, section 12 of the NHS service standards compels those who follow it to “Make new source code open”. Elsewhere, the NHS is being enjoined to use (as well as produce) open source software (REF). Using free software sounds like an obvious thing for a public sector body to do, and open sourcing its own code and allowing other bodies to make use of it also sounds on the surface like a sensible approach. It’s important first to understand what the words “free” and “open” actually mean.</p>
+<p>Open source software licences are not well understood within the NHS, and the important distinction between copyright and licensing even less so. This chapter will cover what free and open source software is, discuss why software licensing is so important, cover the most commonly used software licences, and explain the crucial distinction between holding the copyright for a body of code and having a licence to modify and distribute it.</p>
+</div>
+<div id="free-and-open" class="section level2">
+<h2><span class="header-section-number">4.2</span> “Free” and “open”</h2>
+<p>The words <em>free</em> and <em>open</em> both have everyday meanings in English, and the word <em>free</em> is perhaps doubly confusing since it can refer to something that is either provided without cost (“free as in beer”) or without restriction (“free as in speech”). Confusion often arises because much of free and open source software is both free of cost and provided without restriction. However, when organisations like the Free Software Foundation (FSF) use the word free:</p>
+<blockquote>
+<p>…you should think of “free” as in “free speech,” not as in “free beer” (<a href="https://www.gnu.org/philosophy/free-sw.en.html" class="uri">https://www.gnu.org/philosophy/free-sw.en.html</a>)</p>
+</blockquote>
+<p>Indeed, being able to charge money for copies of source code is part of the meaning of “free” within the definition of free software given by the Free Software Foundation (Ibid.).</p>
+<p>The word <em>open</em> is sometimes used to mean “visible”, and sometimes in a more restrictive meaning of “free and open source”. Merely releasing code, for example on a website, and making it visible, gives nobody else the right to use, modify or distribute it. In order to avoid this confusion, truly free and open source software is often designated as such- Free and Open Source, often abbreviated to FOSS. The remainder of this chapter will focus on FOSS. Even the meaning of FOSS can be controversial, since there is some disagreement about how “free” different software licences are. It is standard practice to take the list of <a href="https://www.gnu.org/licenses/license-list.html">FOSS licences maintained by the FSF</a> and the <a href="https://opensource.org/licenses/alphabetical">Open Source Initiative</a> (OSI) as being the canonical list of free licences.</p>
+</div>
+<div id="free-and-open-source-software" class="section level2">
+<h2><span class="header-section-number">4.3</span> Free and open source software</h2>
+<p>Before considering some of the common licences it is worth understanding the different perspectives of the FSF and the OSI and how they affect for what kinds of licence they typically advocate for. The FSF was founded by Richard Stallman (RMS) who became convinced of the need for software freedom through a number of incidents that occurred when he worked at MIT’s AI laboratory in the 70s and 80s.</p>
+<p>The most famous example of these incidents relates to <a href="https://www.oreilly.com/openbook/freedom/ch01.html">a modification that RMS had made to a printer in use at the lab</a>. He had modified the printer software so that it would email everyone waiting for print jobs when it jammed, so that they could go and unjam it and prevent a backlog of printing from forming after a jam. When the printer was replaced with a newer version RMS found that the source code was not provided (as it had been with the first printer); moreover when he requested the source from someone who had worked on the printer he was told that it was not available. RMS was therefore unable to modify the new printer software to send emails after a jam as he had done previously. This and other incidents of this kind convinced RMS of the need to protect what he went on to call the “four freedoms” of software:</p>
+<ul>
+<li>The freedom to run the program as you wish, for any purpose (freedom 0).</li>
+<li>The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.</li>
+<li>The freedom to redistribute copies so you can help others (freedom 2).</li>
+<li>The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.</li>
+</ul>
+<p>Non technical readers may be confused as to the designation of the first freedom as freedom 0. This is a slightly whimsical extension of the custom in most programming languages (C, for example, or Java, but not R) to begin numbering elements of an array at “0” rather than “1”.</p>
+<p>Any licence that meets these conditions is considered by the FSF to be free. However, the FSF prefers licences which are “copyleft”. <a href="https://en.wikipedia.org/wiki/Copyleft">Copyleft</a>, which is a distorion of the word “copyright”, is a form of licensing which allows a work to be reused, adapted, and distributed, but forces individuals who make use of that right to give the same rights to any derivative works they produce . Copyleft is therefore a form of licensing which protects the rights of all of the users who use derivative works. The most famous example of a copyleft licence is the GPL, more on which later.</p>
+<p>Copyleft can be contrasted with “permissive” licences, which give similar rights to reuse, modify, and distribute, but do not mandate that individuals exercising those rights give the same rights over derivative works. There is some debate as to which of these types of licences is the most “free”. The FSF argue that since permissive licences allow others to take away your rights over source code, that they are less free. Others (such as the OSI) <a href="https://opensource.org/faq#copyleft">state no preference between copyleft and permissive licences</a> and recommend both approaches depending on the project. Still others argue that since permissive licences make fewer demands of individuals reusing and modifying code they are freer than copyleft licences. This debate echoes <a href="https://en.wikipedia.org/wiki/Escape_from_Freedom">Erich Fromm’s classic distinction</a> between “freedom from” (freedom from having your rights over source code taken away) and “freedom to” (freedom to reuse and modify code without sharing the derivative work).</p>
+<p>It is not necessary for this argument to be settled here- for the current purpose it is enough to understand what copyleft licences (like the GPL) do and what permissive licences (such at the MIT licence) do and to make sure that data science teams in the NHS are able to choose the licence that is best for their individual project.</p>
 </div>
 <div id="licences" class="section level2">
-<h2><span class="header-section-number">4.2</span> Licences</h2>
-<div id="gpl" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> GPL</h3>
-<blockquote>
-<p>Nobody should be restricted by the software they use. There are four freedoms that every user should have:
-* the freedom to use the software for any purpose,
-* the freedom to change the software to suit your needs,
-* the freedom to share the software with your friends and neighbors, and
-* the freedom to share the changes you make</p>
-</blockquote>
+<h2><span class="header-section-number">4.4</span> Licences</h2>
+<div id="permissive" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Permissive</h3>
+<p>The most famous examples of permissive licences are the MIT and BSD licences. These licences allow reuse and modification but, unlike copyleft licences, also allow the code to be incorporated into a proprietary codebase without making that codebase subject to the terms of the original licence.</p>
+<div id="mit" class="section level4">
+<h4><span class="header-section-number">4.4.1.1</span> MIT</h4>
+<p>The MIT licence is one of the shortest and simplest licences, and reads as follows:</p>
+<p><a href="https://choosealicense.com/licenses/mit/#">MIT License</a></p>
+<p>Copyright (c) [year] [fullname]</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+<p>This licence shows all the typical features of an open source licence very clearly- it gives permission to others to use, copy, and modify the source, it ensures that the copyright and permission notice is displayed in any modified software, and it includes a notice indicating that the software is provided without warranty of any kind.</p>
+</div>
+</div>
+<div id="copyleft" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Copyleft</h3>
+<div id="gpl" class="section level4">
+<h4><span class="header-section-number">4.4.2.1</span> GPL</h4>
 <p><a href="https://www.gnu.org/licenses/quick-guide-gplv3.en.html" class="uri">https://www.gnu.org/licenses/quick-guide-gplv3.en.html</a></p>
-<p>\TODO</p>
+<p>// TODO</p>
 
+</div>
 </div>
 </div>
 </div>
@@ -125,8 +176,8 @@
           </div>
         </div>
       </div>
-<a href="agile-chapter.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="agile-chapter.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="copyright-chapter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
