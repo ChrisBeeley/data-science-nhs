@@ -5,6 +5,8 @@ date: "07/03/2020"
 output: bookdown::gitbook
 site: bookdown::bookdown_site
 documentclass: book
+bibliography: ["ref.bib"]
+biblio-style: "apalike"
 ---
 
 ```{r setup, include=FALSE}
