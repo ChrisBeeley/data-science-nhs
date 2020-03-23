@@ -8,7 +8,7 @@ Although all of these standards are relevant to data science teams I will now ou
 
 ## Team with multidisciplinary skills and perspectives
 
-The digital, data, and technology https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework provides an outline of the types of roles present within an effective digital/ data/ technology team, which comprise:
+[The digital, data, and technology](https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework) provides an outline of the types of roles present within an effective digital/ data/ technology team, which comprise:
 
   * Data job family
   * IT operations job family
@@ -48,7 +48,7 @@ Agile methods are widely used in data science and they are extremely helpful in 
 
 >iterative, user-centred ways of working will help you get your service in front of real users as soon as possible. Then observing and analysing data on how they use it, and iterating the service based on what you've learned. Because you're not specifying everything up front before you've developed an understanding of what users need, you will reduce the risk of delivering the wrong thing
 
-Following on from the points made previously about multidisciplinary working it is worth noting that Agile Data Science (https://www.oreilly.com/library/view/agile-data-science/9781491960103/ch01.html) states that agile data science teams favour:
+Following on from the points made previously about multidisciplinary working it is worth noting that [Agile Data Science](https://www.oreilly.com/library/view/agile-data-science/9781491960103/ch01.html) states that agile data science teams favour:
 
   * Choosing generalists over specialists
   * Preferring small teams over large teams
@@ -72,7 +72,7 @@ Early data science work (for example dashboards which do not contain identifiabl
 
 ## Make new source code open
 
-Although the advantages of using open source technologies and of open sourcing new technologies have been known for decades (see, e.g. https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar), and government policy has encouraged the production and use of open source within the public sector for ten years or more there has been surprisingly little progress in this area. The NHS is still overwhelmingly dependent on expensive, proprietary software, giving rise to vendor lock in as well as wasting public money. Anecdotal reports suggest even that many IT departments are reluctant to install the statistical programming language [R](https://cran.r-project.org/), an absurd situation given its widespread adoption and use across industry and academia.
+Although the advantages of using open source technologies and of open sourcing new technologies have been known for decades (see, e.g. [The Cathedral and the Bazaar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)), and government policy has encouraged the production and use of open source within the public sector for ten years or more there has been surprisingly little progress in this area. The NHS is still overwhelmingly dependent on expensive, proprietary software, giving rise to vendor lock in as well as wasting public money. Anecdotal reports suggest even that many IT departments are reluctant to install the statistical programming language [R](https://cran.r-project.org/), an absurd situation given its widespread adoption and use across industry and academia.
 
 At the same time, NHS organisations are still very reluctant to open source any code produced by their staff or by agencies subcontracted by NHS organisations. Open sourcing new code is important enough to warrant its own chapter (see chapter \@ref(open-source-chapter)), for the present time it will suffice to quote from the NHS service standard:
 
