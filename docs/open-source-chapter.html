@@ -24,7 +24,6 @@
 <meta name="author" content="Chris Beeley" />
 
 
-<meta name="date" content="2020-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -82,8 +81,12 @@
 <li class="chapter" data-level="4.4.1" data-path="open-source-chapter.html"><a href="open-source-chapter.html#permissive"><i class="fa fa-check"></i><b>4.4.1</b> Permissive</a></li>
 <li class="chapter" data-level="4.4.2" data-path="open-source-chapter.html"><a href="open-source-chapter.html#copyleft"><i class="fa fa-check"></i><b>4.4.2</b> Copyleft</a></li>
 </ul></li>
+<li class="chapter" data-level="4.5" data-path="open-source-chapter.html"><a href="open-source-chapter.html#nhs-data-science-and-software-licences"><i class="fa fa-check"></i><b>4.5</b> NHS data science and software licences</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="copyright-chapter.html"><a href="copyright-chapter.html"><i class="fa fa-check"></i><b>5</b> Copyright and intellectual property</a></li>
+<li class="chapter" data-level="5" data-path="copyright-chapter.html"><a href="copyright-chapter.html"><i class="fa fa-check"></i><b>5</b> Copyright and intellectual property</a><ul>
+<li class="chapter" data-level="5.1" data-path="copyright-chapter.html"><a href="copyright-chapter.html#intellectual-property"><i class="fa fa-check"></i><b>5.1</b> Intellectual property</a></li>
+<li class="chapter" data-level="5.2" data-path="copyright-chapter.html"><a href="copyright-chapter.html#crown-copyright"><i class="fa fa-check"></i><b>5.2</b> Crown copyright</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
 
@@ -198,23 +201,96 @@ tional attribution notices cannot be construed as modifying the License.</li>
 </div>
 <div id="copyleft" class="section level3">
 <h3><span class="header-section-number">4.4.2</span> Copyleft</h3>
-<p>Copyleft licences, as described previously, are quite different to permissive licences.</p>
+<p>Copyleft licences, as described previously, are quite different to permissive licences. They:</p>
 <blockquote>
-<p>impose substantial limitations on those who create and
-distribute derivative works based on works that use these licenses. The GNU Gen-
-eral Public License (the GPL License) explicitly requires that derivative works be dis-
-tributed under the terms of the GPL License and also that derivative works may only
-be permitted to be distributed under the terms of the license. The Mozilla License
-imposes different and less restrictive terms on the licensing of derivative works</p>
+<p>impose substantial limitations on those who create and distribute derivative works based on works that use these licenses. The GNU General Public License (the GPL License) explicitly requires that derivative works be distributed under the terms of the GPL License and also that derivative works may only be permitted to be distributed under the terms of the license. The Mozilla License imposes different and less restrictive terms on the licensing of derivative works.</p>
 </blockquote>
 <p><span class="citation">(Laurent 2008)</span></p>
+<p>Copyleft licences therefore frequently find a use when the publishers of open source code want to make sure that the code in them is not relicensed and incorporated into a proprietary system. There is no prohibition on what the code is used for, or whether the distributors charge a fee, as long as the distributor of the code is prepared to open source all of the code in the derivative work, not just the piece originally licensed under the GPL. Quite obviously it is therefore extremely unpopular companies and individuals who are in the business of selling proprietary code. It is important to note that the GPL comes into effect whenever the code is <em>distributed</em> in some way- for example on a CD or as a download from the Internet. This distinction will become important later in this section.</p>
 <div id="gpl" class="section level4">
 <h4><span class="header-section-number">4.4.2.1</span> GPL</h4>
-<p><a href="https://www.gnu.org/licenses/quick-guide-gplv3.en.html" class="uri">https://www.gnu.org/licenses/quick-guide-gplv3.en.html</a></p>
-<p>// TODO</p>
+<p>The GPL (general public licence) is the cornerstone of the philosophy of the FSF, and it enshrines the <em>four freedoms</em> described previously. Many of the key projects championed by the FSF (such as the GNU Emacs editor and the GNU C Compiler, as well as the Linux Kernel) are licensed under the GPL. <a href="https://choosealicense.com/licenses/gpl-3.0/#">The licence begins with a nice summary of its terms</a>:</p>
+<blockquote>
+<p>GNU GENERAL PUBLIC LICENSE</p>
+<p>Version 3, 29 June 2007</p>
+<p>Copyright (C) 2007 Free Software Foundation, Inc. <a href="https://fsf.org/" class="uri">https://fsf.org/</a></p>
+<p>Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.</p>
+<p>Preamble
+The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works. By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program–to make sure it remains free
+software for all its users. We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors. You can apply it to
+your programs, too.
+When we speak of free software, we are referring to freedom, not
+price. Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights. Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received. You must make sure that they, too, receive
+or can get the source code. And you must show them these terms so they
+know their rights.
+Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+For the developers’ and authors’ protection, the GPL clearly explains
+that there is no warranty for this free software. For both users’ and
+authors’ sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so. This is fundamentally incompatible with the aim of
+protecting users’ freedom to change the software. The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable. Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products. If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary. To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.</p>
+</blockquote>
+<p>The GPL, as can be seen, in this introductory section, lays out three important principles of the GPL- firstly, that it is designed to protect software freedom, including of derivative works. Secondly, any type of warranty is disavowed. Lastly, an explicit condition that patents arising from this code must themselves be licensed under the GPL. The FSF has strong views on software patents which are made very clear in this section- they state their view that software patents should not be able to restrict the freedom of software, but where they are, this licence prevents them from doing so.</p>
+<p>The GPL goes on to give clearer guidance on the exact terms of the licence. For the sake of brevity it will not be discussed further here. Interested parties are directed to the link given above or for explanation on the terms to <span class="citation">Laurent (2008)</span>.</p>
+</div>
+<div id="agpl" class="section level4">
+<h4><span class="header-section-number">4.4.2.2</span> AGPL</h4>
+<p>The AGPL (Affero General Public Licence) 1is more strongly copyleft than the GPL. Its status among the free software community is somewhat controversial, with <a href="https://copyleft.org/guide/comprehensive-gpl-guidech10.html#x13-970009.16">some individuals bitterly opposed to it</a>. The most important difference between the GPL and the AGPL is that the AGPL defines “distribution of code” (which, it should be remembered, is the point at which the provisions of the GPL come into force) as allowing a piece of software to be transmitted over a network. It is quite common in recent time for software companies to provide what is called “Software as a Service” (SaaS). An example would be <a href="https://en.wikipedia.org/wiki/Google_Sheets">Google Sheets</a> which is a spreadsheet program delivered through a web browser. The user does not have to download any extra code to use it and therefore Google does not have to distribute the code. Software licensed under the GPL can therefore be provided as SaaS without any of the provisions of the GPL applying. The AGPL, therefore, exists to allow code to be licensed so as to ensure that even if it is provided as SaaS the entity making the provision is forced to release all of the modified code under the terms of the GPL.</p>
+</div>
+<div id="lgpl" class="section level4">
+<h4><span class="header-section-number">4.4.2.3</span> LGPL</h4>
+<p>The LGPL (lesser general public licence) is so called because it <a href="https://opensource.org/licenses/LGPL-2.1">“because it does Less to protect the user’s freedom than the ordinary General Public License. It also provides other free software developers Less of an advantage over competing non-free programs.”</a></p>
+<p>The LGPL is designed for software libraries rather than full applications. A library (for the benefit of non technical readers) is a computer program that is used in the service of another computer program. For example, a piece of software that plays music might incorporate several different libraries to decode different music formats (such as MP3, FLAC, or AAC). The FSF recommend the LGPL (<a href="https://www.gnu.org/licenses/why-not-lgpl.html">or rather, did recommend it</a>) in cases where there were already proprietary libraries that can be swapped in for free ones. For example, there was a free version of the C compiler (non technical readers should just not worry what this is- suffice to say that it’s pretty important to make a Linux machine work) but licensing it under the GPL would have discouraged creators of proprietary software from using it. Their response would be simply to use a proprietary compiler, which would decrease the reach of free software and would not benefit the free software community in any way. The LGPL allows a piece of software to make use of the code in a library without making all of its source code open. It therefore preserves the free software library by making it a viable choice, even if it doesn’t make other software that uses it free (<a href="https://copyleft.org/guide/comprehensive-gpl-guidech11.html#x14-10000010">source</a>).</p>
+<p>To understand where the LGPL does and does not allow the use of LGPL code in a proprietary product the FSF distinguish “works based on the library” and “works that use the library”. Works that use the library can be incorporated within a proprietary product. What this means in practice is slightly fuzzy in practice but usually this means that a body of code will communicate with the library using some sort of standardised interface (e.g. sending some sort of stream of data in a particular way) and receive back something that itself is standardised in some way (for example, music that has been decoded). The library itself is being used for its intended purpose and is not substantially modified. Works that are based on the library will usually be works that reimplement or modify the actual library itself, changing the code and making it do something different or making it work in a different way. Under the LGPL works that do this have to release all of their code exactly as though the code was licensed by the GPL (Ibid).</p>
+</div>
+<div id="mozilla-public-licence" class="section level4">
+<h4><span class="header-section-number">4.4.2.4</span> Mozilla public licence</h4>
+<p>The Mozilla public licence (MPL) is like the LGPL except more weakly copyleft. Both allow the possibility over incorporating code released under their licence conditions to be used with a proprietary codebase. As we have seen, the LGPL places fairly clear restrictions on this reuse, which effectively prevent distributors of the code from modifying the original code in any way. By contrast, the MPL allows modified code to be incorporated into a proprietary codebase as long as the modifications are themselves shared, but <em>not</em> the rest of the code which they are distributed with.</p>
+</div>
+</div>
+</div>
+<div id="nhs-data-science-and-software-licences" class="section level2">
+<h2><span class="header-section-number">4.5</span> NHS data science and software licences</h2>
+<p>The best software licence for a data science project will vary case by case, but there are some broad things to consider when choosing one. The most important decision to make is between permissive and copyleft licences. Permissive licences are useful to maximise the impact of something in situations where there is no concern about what proprietary vendors might do with code. Releasing code under, for example, an MIT licence allows everybody, including individuals using proprietary code, a chance to use the code under that licence.</p>
+<p>Using a copyleft licence is useful when there is concern about what proprietary vendors might do with a piece of code. For example, vendors could use some functionality from an open source project to make their own product more appealing, and then use that functionality to sell their product to more customers, and then use that market leverage to help them acquire <em>vendor lock in</em>. Vendor lock in is the state in which using a company’s prodcuts ensures that you find it very difficult to move to another company’s products. An example might be using a proprietary statistical software package and saving data in its proprietary format, making it difficult to transfer that data to another piece of software. If proprietary software companies can use code to make the world worse in this way, then choosing a copyleft licence is an excellent way of sharing your code without allowing anybody to incorporate it into a proprietary codebase. Proprietary software companies are free to use copyleft licensed code, but are highly unlikely to do so since it means releasing all of the code that incorporates it.</p>
 
-</div>
-</div>
 </div>
 </div>
             </section>
